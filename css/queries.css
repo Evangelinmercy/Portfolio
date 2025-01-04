@@ -1,0 +1,232 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+  .section-margin {
+    margin: 0 50px 150px;
+  }
+  /* .project-descriptionlft,
+  .project-descriptionrht {
+    width: 500px;
+  } */
+  .footer-socialIcons {
+    display: none !important;
+  }
+  .pdt-list {
+    width: 100% !important;
+}
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: var(--secondary);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: trantext-secondaryX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+
+    .pdt-list {
+      width: 100% !important;
+  }
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: trantext-secondaryX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /*Landing Content*/
+  .landing-text {
+    height: 80vh;
+  }
+  .section-margin {
+    margin: 50px 70px;
+  }
+  .aboutus-content {
+    flex-direction: column;
+  }
+  .about-image {
+    width: 90%;
+    align-items: center;
+    margin: 5rem 2rem 2rem;
+  }
+  /*project*/
+  .project-contentlft {
+    flex-direction: column-reverse;
+  }
+  .project-detailslft {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .project-contentrht {
+    flex-direction: column;
+  }
+  .project-descriptionlft,
+  .project-descriptionrht {
+    width: 100%;
+  }
+  .footer-socialIcons {
+    display: none !important;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .landing-text {
+    height: 80vh;
+  }
+  /*project*/
+  .project-contentlft {
+    flex-direction: column-reverse;
+  }
+  .project-detailslft {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .project-descriptionlft,
+  .project-descriptionrht {
+    width: 100%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .dark-mode-toggle {
+    top: 90px;
+    padding: 5px 7px;
+  }
+  #shapes-mask {
+    display: none;
+  }
+  .social-left {
+    display: none;
+  }
+  .section-margin {
+    margin: 50px 30px;
+  }
+  .mail-right {
+    display: none;
+  }
+  .landing-text {
+    height: 80vh;
+  }
+  /*Aboutus*/
+  .numbered-heading::after {
+    width: 15rem;
+  }
+  .aboutus-content {
+    flex-direction: column;
+  }
+  /*project*/
+  .project-imglft,
+  .project-imgrht img {
+    width: 100%;
+  }
+  .project-contentlft {
+    flex-direction: column-reverse;
+    padding: 2rem 1.2rem;
+  }
+  .project-detailslft {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .project-descriptionlft,
+  .project-descriptionrht {
+    width: 100%;
+  }
+  .project-languageslft li {
+    margin: 0 20px 10px 0;
+  }
+  /* .project-languageslft,
+  .project-languagesrht {
+    flex-direction: row;
+  } */
+  .footer-socialIcons {
+    display: flex !important;
+  }
+  .pdt-list {
+    width: 100% !important;
+}
+}
+
+
+@media(max-width:991px){
+  .products-list {
+    flex-direction: column;
+}
+}
